@@ -23,8 +23,11 @@ const renderProducts = list => {
   // а они следуют друг за другом через запятую. Это можно решить использовав
   // метод join к получившемуся массиву. Либо можно удалить ноды запятых из 
   // разметки.
-  document.querySelector('.products').innerHTML = productList.join('');
-
+  //document.querySelector('.products').innerHTML = productList;//.join('');
+  for (const product of productList) {
+    document.querySelector('.products')
+      .insertAdjacentHTML('beforeend', product);
+  }
   console.log(productList);
 };
 
