@@ -1,34 +1,83 @@
-const products = [
-  { id: 1, title: 'Notebook', price: 1000 },
-  { id: 2, title: 'Mouse', price: 100 },
-  { id: 3, title: 'Keyboard', price: 250 },
-  { id: 4, title: 'Gamepad', price: 150 },
-];
+class Cart {
+  constructor() {
 
-const renderProduct =
-  (title = 'Товар', price = 'Цена', img = './img/pc.png') => {
-    return `<div class="product-item">
-            <img class="product-img" src="${img}" alt="pc">
-            <h3>${title}</h3>
-            <p>${price}</p>
-            <button class="by-btn">Добавить</button>
-          </div>`;
-  };
-
-const renderProducts = list => {
-  const productList = list.map((good) => {
-    return renderProduct(good.title, good.price);
-  });
-  // Запятые отображаются, так как метод map создает новый массив из объектов,
-  // а они следуют друг за другом через запятую. Это можно решить использовав
-  // метод join к получившемуся массиву. Либо можно удалить ноды запятых из 
-  // разметки.
-  //document.querySelector('.products').innerHTML = productList;//.join('');
-  for (const product of productList) {
-    document.querySelector('.products')
-      .insertAdjacentHTML('beforeend', product);
   }
-  console.log(productList);
-};
 
-renderProducts(products);
+  addToCart() {
+
+  }
+
+  renderCart() {
+
+  }
+
+  cleanCart() {
+
+  }
+}
+
+class CartItem {
+  constructor() {
+
+  }
+
+  renderCartItem() {
+
+  }
+}
+
+class ProductList {
+  constructor(container = '.products') {
+    this.container = document.querySelector(container);
+    this.goods = [];
+    this.productsObjects = [];
+
+    this.fetchGoods();
+    this.render();
+    this.calcTotalPrice();
+  }
+
+  fetchGoods() {
+    this.goods = [
+      { id: 1, title: 'Notebook', price: 20000 },
+      { id: 2, title: 'Mouse', price: 1500 },
+      { id: 3, title: 'Keyboard', price: 5000 },
+      { id: 4, title: 'Gamepad', price: 4500 },
+    ];
+  }
+
+  render() {
+    for (const product of this.goods) {
+      const productObject = new ProductItem(product);
+
+      this.productsObjects.push(productObject);
+      this.container.insertAdjacentHTML('beforeend', productObject.getHTMLString());
+    }
+  }
+
+  calcTotalPrice() {
+    let totalPrice = 0;
+    this.productsObjects.forEach(product => totalPrice += product.price);
+    console.log('Сумма товаров равна:', totalPrice);
+  }
+}
+
+class ProductItem {
+  constructor(product, img = './img/pc.png') {
+    this.id = product.id;
+    this.title = product.title;
+    this.price = product.price;
+    this.img = img;
+  }
+
+  getHTMLString() {
+    return `<div class="product-item">
+              <img class="product-img" src="${this.img}" alt="pc">
+              <h3>${this.title}</h3>
+              <p>${this.price}</p>
+              <button class="by-btn">Добавить</button>
+            </div>`
+  }
+}
+
+const list = new ProductList();

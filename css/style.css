@@ -1,10 +1,31 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 .container {
 	max-width: 960px;
 	margin: 0 auto;
 }
 
+.headerBg {
+	background-color: rgb(173, 207, 206);
+}
+
 header {
-	display: grid;
+	display: flex;
+	justify-content: space-between;
+	height: 100px;
+	align-items: center;
+}
+
+.logo {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	margin-top: -8px;
+	color: rgb(188, 255, 251);
 }
 
 button {
@@ -12,18 +33,17 @@ button {
 }
 
 .btn-cart {
-	justify-self: end;
 	width: 100px;
 	height: 30px;
 	border: none;
 	background-color: rgb(210, 247, 245);
-	margin-bottom: 20px;
 }
 
 .products {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 20px;
+	margin-top: 20px;
 }
 
 .product-item {
