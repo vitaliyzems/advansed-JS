@@ -14,9 +14,9 @@ resultBlock.innerHTML = result.replace(/"\B/gm, '"<br>');
 const formEl = document.querySelector('form');
 const errorEl = formEl.querySelector('.error');
 const regExp = {
-	name: /[a-z]+/i,
+	name: /[a-z]+|[а-я]+/i,
 	tel: /\+7\(\d{3}\)\d{3}-\d{4}/,
-	email: /[a-z]+[\.|-]?[a-z]+@[a-z]+\.[a-z]{2,6}/,
+	email: /^[a-z]+[\.|-]?[a-z]+@[a-z]+\.[a-z]{2,6}$/i,
 	someText: /[a-z|\d]+/ig,
 };
 
