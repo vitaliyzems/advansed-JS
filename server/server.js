@@ -42,6 +42,23 @@ app.put('/api/cart/:id', (req, res) => {
             const cart = JSON.parse(data);
             const find = cart.contents.find(good => good.id_product === Number(req.params.id)); // req.query // /?dwd=fwf
             find.quantity += req.body.quantity;
+            console.log(find.quantity);
+
+            fs.writeFile('./server/db/userCart.json', JSON.stringify(cart), (err) => {
+                if (err) res.end(JSON.stringify({ result: 0, err }));
+                else res.end(JSON.stringify({ result: 1 }));
+            });
+        }
+    });
+});
+
+app.delete('/api/cart/:id', (req, res) => {
+    fs.readFile('./server/db/userCart.json', 'utf-8', (err, data) => {
+        if (err) res.send(JSON.stringify({ result: 0, err }));
+        else {
+            const cart = JSON.parse(data);
+            const find = cart.contents.find(good => good.id_product === Number(req.params.id)); // req.query // /?dwd=fwf
+            cart.contents.splice(cart.contents.indexOf(find, 1));
 
             fs.writeFile('./server/db/userCart.json', JSON.stringify(cart), (err) => {
                 if (err) res.end(JSON.stringify({ result: 0, err }));
