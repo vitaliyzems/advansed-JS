@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="header">
+            <div class="container">
+                <div class="header__menu">
+                    <div class="header__left">
+                        <a href="index.html">
+                            <img src="img/logo.svg" alt="logo" class="header__logo">
+                        </a>
+                    </div>
+                    <div class="header__right">
+                        <img src="img/bars.svg" alt="bars" class="header__bars">
+                        <img src="img/user.svg" alt="user" class="header__user">
+                        <cart ref="cart"></cart>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="category">
+            <div class="category__box container">
+                <div class="category__left">
+                    NEW ARRIVALS
+                </div>
+                <div class="category__right">
+                    <span>HOME / </span>
+                    <span>MEN / </span>
+                    <span>NEW ARRIVALS</span>
+                </div>
+            </div>
+        </div>
+        <product-page ref="productPage"></product-page>
+        <!-- <div class="product__grid container">
+        <div class="product__item">
+            <img src="img/item4.png" alt="">
+            <div>
+                <h4>ELLERY X M'O CAPSULE</h4>
+                <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+                    teams
+                    up with Moda Operandi.</p>
+                <p>$52.00</p>
+            </div>
+        </div>
+        <div class="product__item">
+            <img src="img/item3.png" alt="">
+            <div>
+                <h4>ELLERY X M'O CAPSULE</h4>
+                <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+                    teams
+                    up with Moda Operandi.</p>
+                <p>$52.00</p>
+            </div>
+        </div>
+        <div class="product__item">
+            <img src="img/item6.png" alt="">
+            <div>
+                <h4>ELLERY X M'O CAPSULE</h4>
+                <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+                    teams
+                    up with Moda Operandi.</p>
+                <p>$52.00</p>
+            </div>
+        </div>
+    </div> -->
+        <div class="footer">
+            <div class="footer__middle">
+                <div class="container">
+                    <div class="footer__promo">
+                        <div class="footer__comment">
+                            <img src="img/promo-logo.png" alt="logo" class="footer__promo-logo">
+                            <p class="footer__promo-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                                pulvinar purus condimentum“</p>
+                        </div>
+                        <div class="footer__sub-box">
+                            <h4 class="footer__subscribe">Subscribe</h4>
+                            <p class="footer__subscribe-text">FOR OUR NEWSLETTER AND PROMOTION</p>
+                            <form action="#">
+                                <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                                <input type="submit" value="Subscribe" id="subscribe">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="footer__contacts">
+                        <div class="footer__copyright">
+                            © 2021 Brand All Rights Reserved.
+                        </div>
+                        <div class="socialnet">
+                            <div class="socialnet__fb">
+                            </div>
+                            <div class="socialnet__inst">
+                            </div>
+                            <div class="socialnet__pin">
+                            </div>
+                            <div class="socialnet__twit">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/cartDropdown.js"></script>
+    <script src="js/productPage.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

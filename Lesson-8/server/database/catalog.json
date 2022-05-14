@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "img": "img/catalog-product/1.png",
+    "name": "Куртка",
+    "desc": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery\tteams\tup with Moda Operandi.",
+    "price": "62.20",
+    "currentProduct": true
+  },
+  {
+    "id": 2,
+    "img": "img/catalog-product/2.png",
+    "name": "Брюки",
+    "desc": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery\tteams\tup with Moda Operandi.",
+    "price": "45.00",
+    "currentProduct": false
+  },
+  {
+    "id": 3,
+    "img": "img/catalog-product/3.png",
+    "name": "Худи",
+    "desc": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery\tteams\tup with Moda Operandi.",
+    "price": "54.50",
+    "currentProduct": false
+  },
+  {
+    "id": 4,
+    "img": "img/catalog-product/4.png",
+    "name": "Штаны",
+    "desc": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery\tteams\tup with Moda Operandi.",
+    "price": "40.60",
+    "currentProduct": false
+  },
+  {
+    "id": 5,
+    "img": "img/catalog-product/5.png",
+    "name": "Кофта",
+    "desc": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery\tteams\tup with Moda Operandi.",
+    "price": "55.40",
+    "currentProduct": false
+  },
+  {
+    "id": 6,
+    "img": "img/catalog-product/6.png",
+    "name": "Футболка",
+    "desc": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery\tteams\tup with Moda Operandi.",
+    "price": "32.90",
+    "currentProduct": false
+  },
+  {
+    "id": 7,
+    "img": "img/catalog-product/7.png",
+    "name": "Рубашка",
+    "desc": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery\tteams\tup with Moda Operandi.",
+    "price": "41.70",
+    "currentProduct": false
+  },
+  {
+    "id": 8,
+    "img": "img/catalog-product/8.png",
+    "name": "Кожанная куртка",
+    "desc": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery\tteams\tup with Moda Operandi.",
+    "price": "72.00",
+    "currentProduct": false
+  },
+  {
+    "id": 9,
+    "img": "img/catalog-product/9.png",
+    "name": "Рубашка с коротким рукавом",
+    "desc": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery\tteams\tup with Moda Operandi.",
+    "price": "29.30",
+    "currentProduct": false
+  }
+]

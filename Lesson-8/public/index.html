@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="header">
+      <div class="container">
+        <div class="header__menu">
+          <div class="header__left">
+            <a href="#">
+              <img src="img/logo.svg" alt="logo" class="header__logo">
+            </a>
+            <search ref="search"></search>
+          </div>
+          <div class="header__right">
+            <img src="img/bars.svg" alt="bars" class="header__bars">
+            <img src="img/user.svg" alt="user" class="header__user">
+            <cart ref="cart"></cart>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="category">
+      <div class="category__box container">
+        <div class="category__left">
+          NEW ARRIVALS
+        </div>
+        <div class="category__right">
+          <span>HOME / </span>
+          <span>MEN / </span>
+          <span>NEW ARRIVALS</span>
+        </div>
+      </div>
+    </div>
+    <div class="catalog container">
+      <div class="parameters">
+        <div class="parameters__left">
+          <p>FILTER</p>
+          <img src="img/filter.svg" alt="">
+        </div>
+        <div class="parameters__right">
+          <div>
+            <p>TRENDING NOW</p>
+            <img src="img/arrow.svg" alt="">
+          </div>
+          <div>
+            <p>SIZE</p>
+            <img src="img/arrow.svg" alt="">
+          </div>
+          <div>
+            <p>PRICE</p>
+            <img src="img/arrow.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <products ref="products"></products>
+      <div class="catalog__strip">
+        <img src="img/arrow-left.svg" alt="">
+        <span class="num1">1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6.....20</span>
+        <img src="img/arrow-right.svg" alt="">
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="footer__features">
+            <img src="img/delivery.svg" alt="free delivery" class="footer__logo order1">
+            <img src="img/sales.svg" alt="sales & discount" class="footer__logo order4">
+            <img src="img/quality.svg" alt="quality" class="footer__logo order7">
+            <h4 class="footer__heading order2">Free Delivery</h4>
+            <h4 class="footer__heading order5">Sales & discounts</h4>
+            <h4 class="footer__heading order8">Quality assurance</h4>
+            <p class="footer__text order3">Worldwide delivery on all. Authorit tively morph next-generation
+              innov
+              tion
+              with extensive models.</p>
+            <p class="footer__text  order6">Worldwide delivery on all. Authorit tively morph next-generation
+              innov
+              tion
+              with extensive models.</p>
+            <p class="footer__text order9">Worldwide delivery on all. Authorit tively morph next-generation
+              innov
+              tion
+              with extensive models.</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__middle">
+        <div class="container">
+          <div class="footer__promo">
+            <div class="footer__comment">
+              <img src="img/promo-logo.png" alt="logo" class="footer__promo-logo">
+              <p class="footer__promo-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                pulvinar purus condimentum“</p>
+            </div>
+            <div class="footer__sub-box">
+              <h4 class="footer__subscribe">Subscribe</h4>
+              <p class="footer__subscribe-text">FOR OUR NEWSLETTER AND PROMOTION</p>
+              <form action="#">
+                <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                <input type="submit" value="Subscribe" id="subscribe">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__contacts">
+            <div class="footer__copyright">
+              © 2021 Brand All Rights Reserved.
+            </div>
+            <div class="socialnet">
+              <div class="socialnet__fb">
+              </div>
+              <div class="socialnet__inst">
+              </div>
+              <div class="socialnet__pin">
+              </div>
+              <div class="socialnet__twit">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/cartDropdown.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
